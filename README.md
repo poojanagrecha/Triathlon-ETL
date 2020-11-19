@@ -16,9 +16,13 @@ Since the data is presented differently on each page, our group had to clean eac
 ## Load
 
 Our database consists of four tables - three lookup tables for state data, organization data, and race metadata plus a table for race results. Below is the layout for the table:
-Race Table​ - this table is a lookup table containing the race metadata including the name and race of the date. Primary key is race_id, a serial integer automatically assigned by Postgres . Last updated will also be assigned by Postgres as the datetime of the last time the data was updated.
-Organization​ - this table is a lookup table which will identify the source of the race results. Primary key is organization_id, a serial integer automatically assigned by Postgres. Last updated will also be assigned by Postgres as the datetime of the last time the data was updated.
-State_Data​ - this table is a lookup table which will identify the State that the triathlete is from. Primary key is state_id, a serial integer automatically assigned by Postgres. Last updated will also be assigned by Postgres as the datetime of the last time the data was updated.
-Results​ - this is our main table which has information on the first name, last name, age range, gender, race time, and ranking. The table will have foreign keys for race_id, organization_id, and state_id.
+
+- Race Table​ - this table is a lookup table containing the race metadata including the name and race of the date. Primary key is race_id, a serial integer automatically assigned by Postgres . Last updated will also be assigned by Postgres as the datetime of the last time the data was updated.
+
+- Organization​ - this table is a lookup table which will identify the source of the race results. Primary key is organization_id, a serial integer automatically assigned by Postgres. Last updated will also be assigned by Postgres as the datetime of the last time the data was updated.
+
+- State_Data​ - this table is a lookup table which will identify the State that the triathlete is from. Primary key is state_id, a serial integer automatically assigned by Postgres. Last updated will also be assigned by Postgres as the datetime of the last time the data was updated.
+
+- Results​ - this is our main table which has information on the first name, last name, age range, gender, race time, and ranking. The table will have foreign keys for race_id, organization_id, and state_id.
 
 ![ERD Diagram](https://github.com/poojanagrecha/Triathlon-ETL/blob/master/Images/ETL_ERD.png)
